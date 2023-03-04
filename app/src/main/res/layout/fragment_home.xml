@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hom_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="false"
+    app:layout_anchorGravity="bottom"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/one_piece_logo"/>
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="58dp"
+            android:layout_alignBottom="@+id/product_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/one_piece_font"
+            android:text="One Piece"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        style="@android:style/Widget.DeviceDefault.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp">
+
+        <LinearLayout
+            android:id="@+id/layout_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingEnd="15dp"
+            android:weightSum="2"
+            tools:ignore="RtlSymmetry">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/monitor_click"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                app:cardCornerRadius="19dp"
+                tools:ignore="KeyboardInaccessibleWidget,RtlHardcoded">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:duplicateParentState="true"
+                        android:layout_width="167dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/monitor" />
+
+                    <TextView
+                        android:duplicateParentState="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/one_piece_font"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:text="Monitor"
+                        android:textColor="@color/cardview_light_background" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details_click"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                app:cardCornerRadius="19dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="92dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/vegit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:fontFamily="@font/one_piece_font"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:text="Details"
+                        android:textColor="@color/cardview_light_background"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

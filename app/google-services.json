@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "164709213146",
+    "firebase_url": "https://gague-d4f5c-default-rtdb.firebaseio.com",
+    "project_id": "gague-d4f5c",
+    "storage_bucket": "gague-d4f5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164709213146:android:e97c67cd7dc092871756e3",
+        "android_client_info": {
+          "package_name": "com.example.gague"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164709213146-6sdnira7ahhseic7rhu7t7ea8t5tur5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyVOcG8eojbVyIiGW5rW4WF6htf4jTj30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164709213146-6sdnira7ahhseic7rhu7t7ea8t5tur5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_control">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/back_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/back_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/back_img"
+            android:fontFamily="@font/one_piece_font"
+            android:gravity="center"
+            android:text="Control"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_column="1"
+                android:background="@drawable/boarder_line"
+                android:src="@drawable/ac" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+
+            <ToggleButton
+                android:id="@+id/fan"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_column="2"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/boarder_line"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50sp">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_column="1"
+                android:background="@drawable/boarder_line"
+                android:src="@drawable/lamp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+
+            <ToggleButton
+                android:id="@+id/bulb"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_column="2"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/boarder_line"
+                android:textSize="20sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <com.ekn.gruzer.gaugelibrary.ArcGauge
+            android:id="@+id/fanspeed"
+            android:layout_width="180sp"
+            android:layout_height="110sp"
+            tools:ignore="MissingConstraints" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="170sp"
+            android:layout_height="50sp"
+            android:max="250"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fanspeed"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fan Speed"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
